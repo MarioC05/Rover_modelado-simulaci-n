@@ -1,0 +1,110 @@
+<?xml version="1.0"?>
+
+<robot name="rover_robot"
+       xmlns:xacro="http://www.ros.org/wiki/xacro">
+
+  <!-- Componentes -->
+  <xacro:include 
+    filename="$(find rover_description)/urdf/base/rover_base.urdf.xacro"/>
+
+  <xacro:include
+    filename="$(find rover_description)/urdf/wheels/rover_wheel.urdf.xacro"/>
+
+  <xacro:include
+    filename="$(find rover_description)/urdf/arm/rover_scara.urdf.xacro"/>
+
+  <xacro:include 
+    filename="$(find rover_description)/urdf/sensors/imu_sensor.urdf.xacro"/>
+
+  <xacro:include 
+    filename="$(find rover_description)/urdf/sensors/camera_front.urdf.xacro"/>
+
+  <xacro:include 
+    filename="$(find rover_description)/urdf/sensors/camera_arm.urdf.xacro"/>
+
+  <xacro:rover_base prefix=""/>
+
+  <xacro:rover_wheel
+      prefix="wheel1_"
+      parent="Pipe_f_link">
+
+    <origin rpy="-1.57080 3.14159 0.00000" xyz="-0.00000 1.00654 -0.40021"/>
+
+  </xacro:rover_wheel>
+
+  <xacro:rover_wheel
+      prefix="wheel2_"
+      parent="Pipe_f_link">
+
+    <origin rpy="1.57080 0.00000 0.00000" xyz="-0.00000 -1.00654 -0.39605"/>
+
+  </xacro:rover_wheel>
+
+  <xacro:rover_wheel
+      prefix="wheel3_"
+      parent="Pipe_f2_link">
+
+    <origin rpy="1.57080 0.00000 -3.14159" xyz="0.43893 0.91091 -0.44021"/>
+
+  </xacro:rover_wheel>
+
+  <xacro:rover_wheel
+      prefix="wheel4_"
+      parent="Pipe_f2_link">
+
+    <origin rpy="1.57080 0.00000 0.00000" xyz="0.43893 -0.91041 -0.44021"/>
+
+  </xacro:rover_wheel>
+
+  <xacro:rover_wheel
+      prefix="wheel5_"
+      parent="Pipe_f2_link">
+
+    <origin rpy="-1.57080 3.14159 0.00000" xyz="-0.43893 0.91091 -0.44021"/>
+
+  </xacro:rover_wheel>
+
+  <xacro:rover_wheel
+      prefix="wheel6_"
+      parent="Pipe_f2_link">
+
+    <origin rpy="1.57080 0.00000 0.00000" xyz="-0.43893 -0.91041 -0.44021"/>
+
+  </xacro:rover_wheel>
+
+  <xacro:rover_scara 
+      prefix=""
+      parent="base_link">
+
+    <origin rpy="0.00000 0.00000 0.00000" xyz="0.51316 0.00000 1.54732"/>
+
+  </xacro:rover_scara>
+
+  <xacro:imu_sensor parent="base_link"
+                  link_name="imu_link"
+                  topic="imu/data"/>
+
+  <xacro:camera_front parent="base_link"/>
+
+  <xacro:camera_arm parent="Scara4_link"/>
+
+
+  <xacro:include 
+      filename="$(find rover_description)/urdf/ros2_control.urdf.xacro"/>
+  <!-- Controlador Gazebo ros2  -->
+  <xacro:arg name="config_controllers" default="$(find rover_description)/config/robot_controllers.yaml"/>
+  <xacro:arg name="update_rate" default="20"/>
+  <!-- Esta es la llamada que activa todo el sistema de control -->
+  <xacro:ros2_control/>
+
+  <material name="Material">
+    <color rgba="0.80000 0.67843 1.00000 1.00000"/>
+  </material>
+  <material name="Material.001">
+    <color rgba="1.00000 0.00000 0.00000 1.00000"/>
+  </material>
+  <material name="Material.004">
+    <color rgba="0.49804 0.49804 0.49804 1.00000"/>
+  </material>
+
+</robot>

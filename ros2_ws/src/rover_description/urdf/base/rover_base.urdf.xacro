@@ -1,0 +1,122 @@
+<?xml version="1.0"?>
+
+<robot xmlns:xacro="http://www.ros.org/wiki/xacro">
+
+  <xacro:macro name="rover_base" params="prefix">
+
+    <link name="${prefix}base_footprint"/>
+
+    <joint name="${prefix}base_footprint_joint" type="fixed">
+        <parent link="${prefix}base_footprint"/>
+        <child link="${prefix}base_link"/>
+        <origin xyz="0 0 0" rpy="0 0 0"/>
+    </joint>
+
+    <link name="${prefix}base_link">
+        <collision name="${prefix}Rover_body_collision">
+            <origin rpy="0.00000 0.00000 0.00000" xyz="-0.50000 0.00000 0.00134"/>
+            <geometry>
+                <box size="3.50000 1.80000 1.20000"/>
+            </geometry>
+        </collision>
+        <collision name="${prefix}Rover_body_collision.0">
+            <origin rpy="0.00000 0.00000 0.00000" xyz="-1.00662 0.70012 0.89933"/>
+            <geometry>
+                <box size="2.00000 0.30000 0.60000"/>
+            </geometry>
+        </collision>
+        <collision name="${prefix}Rover_body_collision.1">
+            <origin rpy="0.00000 0.00000 0.00000" xyz="-1.00662 -0.70012 0.89933"/>
+            <geometry>
+                <box size="2.00000 0.30000 0.60000"/>
+            </geometry>
+        </collision>
+        <collision name="${prefix}Rover_body_collision.2">
+            <origin rpy="0.00000 0.00000 0.00000" xyz="-2.13016 0.00000 0.89667"/>
+            <geometry>
+                <box size="0.20000 1.80000 0.60000"/>
+            </geometry>
+        </collision>
+        <collision name="${prefix}Rover_body_collision.3">
+            <origin rpy="0.00000 0.00000 0.00000" xyz="0.10403 0.00000 0.89667"/>
+            <geometry>
+                <box size="0.20000 1.80000 0.60000"/>
+            </geometry>
+        </collision>
+        <inertial>
+            <origin xyz="0 0 0" rpy="0 0 0"/>
+            <mass value="100.0"/>
+            <inertia
+                ixx="9.9333"
+                ixy="0.0"
+                ixz="0.0"
+                iyy="23.6833"
+                iyz="0.0"
+                izz="27.0833"/>
+        </inertial>
+        <visual name="${prefix}Rover_body">
+            <material name="Material.001"/>
+            <origin rpy="0.00000 0.00000 0.00000" xyz="0.75000 0.00000 0.00000"/>
+            <geometry>
+                <mesh filename="package://rover_description/meshes/dae/Cube.073.dae" scale="1.00000 1.00000 1.00000"/>
+            </geometry>
+        </visual>
+    </link>
+
+    <joint name="${prefix}Pipe_f2_link_joint" type="fixed">
+        <origin rpy="0.00000 0.00000 0.00000" xyz="-1.36275 0.00000 -0.71000"/>
+        <parent link="${prefix}base_link"/>
+        <child link="${prefix}Pipe_f2_link"/>
+    </joint>
+
+    <link name="${prefix}Pipe_f2_link">
+        <collision name="${prefix}Pipe_f2_collision">
+            <origin rpy="1.57080 0.00000 0.00000" xyz="0.00000 -0.00000 0.00000"/>
+            <geometry>
+                <mesh filename="package://rover_description/meshes/dae/Cylinder.001.dae" scale="1.00000 1.00000 1.00000"/>
+            </geometry>
+        </collision>
+        <inertial>
+            <inertia ixx="0.30484" ixy="-0.00000" ixz="-0.00000" iyy="0.26151" iyz="0.00009" izz="0.44853"/>
+            <origin rpy="0.00000 0.00000 0.00000" xyz="-0.00000 0.00012 -0.25002"/>
+            <mass value="3.00000"/>
+        </inertial>
+        <visual name="${prefix}Pipe_f2">
+            <material name="Material.001"/>
+            <origin rpy="1.57080 0.00000 0.00000" xyz="0.00000 -0.00000 0.00000"/>
+            <geometry>
+                <mesh filename="package://rover_description/meshes/dae/Cylinder.006.dae" scale="1.00000 1.00000 1.00000"/>
+            </geometry>
+        </visual>
+    </link>
+
+    <joint name="${prefix}Pipe_f_link_joint" type="fixed">
+        <origin rpy="0.00000 0.00000 0.00000" xyz="0.71338 0.00000 -0.74153"/>
+        <parent link="${prefix}base_link"/>
+        <child link="${prefix}Pipe_f_link"/>
+    </joint>
+
+    <link name="${prefix}Pipe_f_link">
+        <collision name="${prefix}Pipe_f_collision">
+            <origin rpy="1.57080 0.00000 0.00000" xyz="-0.00000 0.00000 -0.00000"/>
+            <geometry>
+                <mesh filename="package://rover_description/meshes/dae/Cylinder.dae" scale="1.07332 0.98500 1.10831"/>
+            </geometry>
+        </collision>
+        <inertial>
+            <inertia ixx="0.55431" ixy="0.00000" ixz="-0.00017" iyy="0.05914" iyz="0.00000" izz="0.49935"/>
+            <origin rpy="0.00000 0.00000 0.00000" xyz="-0.00014 0.00000 -0.11017"/>
+            <mass value="3.00000"/>
+        </inertial>
+        <visual name="${prefix}Pipe_f">
+            <material name="Material.004"/>
+            <origin rpy="1.57080 0.00000 0.00000" xyz="0.00000 0.00000 0.00000"/>
+            <geometry>
+                <mesh filename="package://rover_description/meshes/dae/Cylinder.002.dae" scale="1.22000 1.22000 1.22000"/>
+            </geometry>
+        </visual>
+    </link>
+
+  </xacro:macro>
+
+</robot>

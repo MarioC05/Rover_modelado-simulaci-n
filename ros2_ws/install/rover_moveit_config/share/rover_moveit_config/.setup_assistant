@@ -1,0 +1,25 @@
+moveit_setup_assistant_config:
+  urdf:
+    package: rover_description
+    relative_path: robots/final_rover.urdf.xacro
+  srdf:
+    relative_path: config/rover_robot.srdf
+  package_settings:
+    author_name: Mario C. Sández
+    author_email: m.casero.2023@alumnos.urjc.es
+    generated_timestamp: 1782282671
+  control_xacro:
+    command:
+      - position
+    state:
+      - position
+      - velocity
+  modified_urdf:
+    xacros:
+      - control_xacro
+  control_xacro:
+    command:
+      - position
+    state:
+      - position
+      - velocity

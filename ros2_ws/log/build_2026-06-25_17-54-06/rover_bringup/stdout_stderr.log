@@ -1,0 +1,29 @@
+-- Found ament_cmake: 2.5.6 (/opt/ros/jazzy/share/ament_cmake/cmake)
+-- Found ament_lint_auto: 0.17.5 (/opt/ros/jazzy/share/ament_lint_auto/cmake)
+-- Configuring done (0.2s)
+-- Generating done (0.0s)
+-- Build files have been written to: /home/mario/Desktop/MyS/Mario_Casero_Practica3/yet_another_ws/build/rover_bringup
+-- Install configuration: ""
+-- Installing: /home/mario/Desktop/MyS/Mario_Casero_Practica3/yet_another_ws/install/rover_bringup/share/rover_bringup/launch
+-- Installing: /home/mario/Desktop/MyS/Mario_Casero_Practica3/yet_another_ws/install/rover_bringup/share/rover_bringup/launch/robot_controllers.launch.py
+-- Installing: /home/mario/Desktop/MyS/Mario_Casero_Practica3/yet_another_ws/install/rover_bringup/share/rover_bringup/launch/simulation.launch.py
+-- Installing: /home/mario/Desktop/MyS/Mario_Casero_Practica3/yet_another_ws/install/rover_bringup/share/rover_bringup/launch/robot_gazebo.launch.py
+-- Installing: /home/mario/Desktop/MyS/Mario_Casero_Practica3/yet_another_ws/install/rover_bringup/share/rover_bringup/config
+-- Installing: /home/mario/Desktop/MyS/Mario_Casero_Practica3/yet_another_ws/install/rover_bringup/share/rover_bringup/config/rover_bridge.yaml
+-- Up-to-date: /home/mario/Desktop/MyS/Mario_Casero_Practica3/yet_another_ws/install/rover_bringup/share/rover_bringup/config
+-- Up-to-date: /home/mario/Desktop/MyS/Mario_Casero_Practica3/yet_another_ws/install/rover_bringup/share/rover_bringup/config/rover_bridge.yaml
+-- Installing: /home/mario/Desktop/MyS/Mario_Casero_Practica3/yet_another_ws/install/rover_bringup/share/ament_index/resource_index/package_run_dependencies/rover_bringup
+-- Installing: /home/mario/Desktop/MyS/Mario_Casero_Practica3/yet_another_ws/install/rover_bringup/share/ament_index/resource_index/parent_prefix_path/rover_bringup
+-- Installing: /home/mario/Desktop/MyS/Mario_Casero_Practica3/yet_another_ws/install/rover_bringup/share/rover_bringup/environment/ament_prefix_path.sh
+-- Installing: /home/mario/Desktop/MyS/Mario_Casero_Practica3/yet_another_ws/install/rover_bringup/share/rover_bringup/environment/ament_prefix_path.dsv
+-- Installing: /home/mario/Desktop/MyS/Mario_Casero_Practica3/yet_another_ws/install/rover_bringup/share/rover_bringup/environment/path.sh
+-- Installing: /home/mario/Desktop/MyS/Mario_Casero_Practica3/yet_another_ws/install/rover_bringup/share/rover_bringup/environment/path.dsv
+-- Installing: /home/mario/Desktop/MyS/Mario_Casero_Practica3/yet_another_ws/install/rover_bringup/share/rover_bringup/local_setup.bash
+-- Installing: /home/mario/Desktop/MyS/Mario_Casero_Practica3/yet_another_ws/install/rover_bringup/share/rover_bringup/local_setup.sh
+-- Installing: /home/mario/Desktop/MyS/Mario_Casero_Practica3/yet_another_ws/install/rover_bringup/share/rover_bringup/local_setup.zsh
+-- Installing: /home/mario/Desktop/MyS/Mario_Casero_Practica3/yet_another_ws/install/rover_bringup/share/rover_bringup/local_setup.dsv
+-- Installing: /home/mario/Desktop/MyS/Mario_Casero_Practica3/yet_another_ws/install/rover_bringup/share/rover_bringup/package.dsv
+-- Installing: /home/mario/Desktop/MyS/Mario_Casero_Practica3/yet_another_ws/install/rover_bringup/share/ament_index/resource_index/packages/rover_bringup
+-- Installing: /home/mario/Desktop/MyS/Mario_Casero_Practica3/yet_another_ws/install/rover_bringup/share/rover_bringup/cmake/rover_bringupConfig.cmake
+-- Installing: /home/mario/Desktop/MyS/Mario_Casero_Practica3/yet_another_ws/install/rover_bringup/share/rover_bringup/cmake/rover_bringupConfig-version.cmake
+-- Installing: /home/mario/Desktop/MyS/Mario_Casero_Practica3/yet_another_ws/install/rover_bringup/share/rover_bringup/package.xml

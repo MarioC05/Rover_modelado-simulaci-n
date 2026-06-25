@@ -1,0 +1,198 @@
+<?xml version="1.0"?>
+
+<robot xmlns:xacro="http://www.ros.org/wiki/xacro">
+
+  <xacro:macro name="rover_scara" params="prefix parent *origin">
+
+    <joint name="${prefix}Scara_base_link_joint" type="fixed">
+        <xacro:insert_block name="origin"/>
+        <parent link="${parent}"/>
+        <child link="${prefix}Scara_base_link"/>
+    </joint>
+    <joint name="${prefix}Scara1_link_joint" type="revolute">
+        <limit lower="-3.14000" upper="3.14000" effort="1000.00000" velocity="100.00000"/>
+        <origin rpy="0.00000 0.00000 0.00000" xyz="0.00000 0.00000 0.92062"/>
+        <parent link="${prefix}Scara_base_link"/>
+        <child link="${prefix}Scara1_link"/>
+        <axis xyz="0.00000 0.00000 1.00000"/>
+    </joint>
+    <joint name="${prefix}Scara2_link_joint" type="revolute">
+        <limit lower="-3.14000" upper="3.14000" effort="1000.00000" velocity="100.00000"/>
+        <origin rpy="0.00000 0.00000 0.00000" xyz="1.50000 0.00000 0.20278"/>
+        <parent link="${prefix}Scara1_link"/>
+        <child link="${prefix}Scara2_link"/>
+        <axis xyz="0.00000 0.00000 1.00000"/>
+    </joint>
+    <joint name="${prefix}Scara3_link_joint" type="revolute">
+        <limit lower="-3.14000" upper="3.14000" effort="1000.00000" velocity="100.00000"/>
+        <origin rpy="0.00000 0.00000 0.00000" xyz="0.00000 1.50000 0.00000"/>
+        <parent link="${prefix}Scara2_link"/>
+        <child link="${prefix}Scara3_link"/>
+        <axis xyz="0.00000 0.00000 1.00000"/>
+    </joint>
+    <joint name="${prefix}Scara4_link_joint" type="prismatic">
+        <limit lower="-1.25000" upper="2.00000" effort="1000.00000" velocity="100.00000"/>
+        <origin rpy="0.00000 0.00000 0.00000" xyz="0.00000 0.00000 -2.37206"/>
+        <parent link="${prefix}Scara3_link"/>
+        <child link="${prefix}Scara4_link"/>
+        <axis xyz="0.00000 0.00000 1.00000"/>
+    </joint>
+    <joint name="${prefix}Claw1_link_joint" type="prismatic">
+        <limit lower="-0.40000" upper="0.00000" effort="1000.00000" velocity="100.00000"/>
+        <origin rpy="0.00000 0.00000 0.00000" xyz="0.00000 0.45000 -0.04484"/>
+        <parent link="${prefix}Scara4_link"/>
+        <child link="${prefix}claw1_link"/>
+        <axis xyz="0.00000 1.00000 0.00000"/>
+    </joint>
+    <joint name="${prefix}Claw2_link_joint" type="prismatic">
+        <limit lower="0.00000" upper="0.40000" effort="1000.00000" velocity="100.00000"/>
+        <origin rpy="0.00000 0.00000 0.00000" xyz="0.00000 -0.45000 -0.04484"/>
+        <parent link="${prefix}Scara4_link"/>
+        <child link="${prefix}claw2_link"/>
+        <axis xyz="0.00000 1.00000 0.00000"/>
+    </joint>
+
+    <link name="${prefix}Scara_base_link">
+        <collision name="${prefix}Scara_base_collision">
+            <origin rpy="0.00000 0.00000 0.00000" xyz="0.00000 0.00000 0.00000"/>
+            <geometry>
+                <mesh filename="package://rover_description/meshes/dae/Cylinder.007.dae" scale="1.00000 1.00000 2.00000"/>
+            </geometry>
+        </collision>
+        <inertial>
+            <inertia ixx="0.08583" ixy="0.00000" ixz="0.00000" iyy="0.08583" iyz="0.00000" izz="0.00500"/>
+            <origin rpy="0.00000 0.00000 0.00000" xyz="0.00000 0.00000 0.00000"/>
+            <mass value="1.00000"/>
+        </inertial>
+        <visual name="${prefix}Scara_base">
+            <material name="Material.001"/>
+            <origin rpy="0.00000 0.00000 0.00000" xyz="0.00000 0.00000 0.00000"/>
+            <geometry>
+                <cylinder radius="0.10000" length="2.00000"/>
+            </geometry>
+        </visual>
+    </link>
+    <link name="${prefix}Scara1_link">
+        <collision name="${prefix}Scara1_collision">
+            <origin rpy="0.00000 0.00000 0.00000" xyz="1.50000 0.00000 0.10278"/>
+            <geometry>
+                <mesh filename="package://rover_description/meshes/dae/Cylinder.008.dae" scale="1.00000 1.00000 1.00000"/>
+            </geometry>
+        </collision>
+        <inertial>
+            <inertia ixx="0.01480" ixy="0.00000" ixz="-0.04921" iyy="0.53633" iyz="0.00000" izz="0.52790"/>
+            <origin rpy="0.00000 0.00000 0.00000" xyz="0.87919 0.00000 0.02000"/>
+            <mass value="1.00000"/>
+        </inertial>
+        <visual name="${prefix}Scara1">
+            <material name="Material.001"/>
+            <origin rpy="0.00000 0.00000 0.00000" xyz="1.50000 0.00000 0.10278"/>
+            <geometry>
+                <mesh filename="package://rover_description/meshes/dae/Cylinder.008.dae" scale="1.00000 1.00000 1.00000"/>
+            </geometry>
+        </visual>
+    </link>
+    <link name="${prefix}Scara2_link">
+        <collision name="${prefix}Scara2_collision">
+            <origin rpy="0.00000 0.00000 0.00000" xyz="0.00000 0.75000 0.00000"/>
+            <geometry>
+                <mesh filename="package://rover_description/meshes/dae/Cube.122.dae" scale="1.00000 1.00000 1.00000"/>
+            </geometry>
+        </collision>
+        <inertial>
+            <inertia ixx="0.19083" ixy="0.00000" ixz="0.00000" iyy="0.00667" iyz="0.00000" izz="0.19083"/>
+            <origin rpy="0.00000 0.00000 0.00000" xyz="0.00000 0.75000 0.00000"/>
+            <mass value="1.00000"/>
+        </inertial>
+        <visual name="${prefix}Scara2">
+            <material name="Material.001"/>
+            <origin rpy="0.00000 0.00000 0.00000" xyz="0.00000 0.75000 0.00000"/>
+            <geometry>
+                <box size="0.20000 1.50000 0.20000"/>
+            </geometry>
+        </visual>
+    </link>
+    <link name="${prefix}Scara3_link">
+        <collision name="${prefix}Scara3_collision">
+            <origin rpy="0.00000 0.00000 0.00000" xyz="0.00000 0.00000 0.00000"/>
+            <geometry>
+                <mesh filename="package://rover_description/meshes/dae/Cylinder.010.dae" scale="0.15000 0.15000 0.10000"/>
+            </geometry>
+        </collision>
+        <inertial>
+            <inertia ixx="0.00179" ixy="0.00000" ixz="0.00000" iyy="0.00179" iyz="0.00000" izz="0.00225"/>
+            <origin rpy="0.00000 0.00000 0.00000" xyz="0.00000 0.00000 0.00000"/>
+            <mass value="0.20000"/>
+        </inertial>
+        <visual name="${prefix}Scara3">
+            <material name="Material.001"/>
+            <origin rpy="0.00000 0.00000 0.00000" xyz="0.00000 0.00000 0.00000"/>
+            <geometry>
+                <cylinder radius="0.15000" length="0.20000"/>
+            </geometry>
+        </visual>
+    </link>
+    <link name="${prefix}Scara4_link">
+        <collision name="${prefix}Scara4_collision">
+            <origin rpy="0.00000 0.00000 0.00000" xyz="0.00000 0.00000 1.90052"/>
+            <geometry>
+                <mesh filename="package://rover_description/meshes/dae/Cylinder.009.dae" scale="1.00000 1.00000 1.00000"/>
+            </geometry>
+        </collision>
+        <inertial>
+            <inertia ixx="2.84608" ixy="-0.00000" ixz="-0.00000" iyy="2.77466" iyz="-0.00000" izz="0.10059"/>
+            <origin rpy="0.00000 0.00000 0.00000" xyz="0.00000 0.00000 0.43097"/>
+            <mass value="2.00000"/>
+        </inertial>
+        <visual name="${prefix}Scara4">
+            <material name="Material.001"/>
+            <origin rpy="0.00000 0.00000 0.00000" xyz="0.00000 0.00000 1.90052"/>
+            <geometry>
+                <mesh filename="package://rover_description/meshes/dae/Cylinder.009.dae" scale="1.00000 1.00000 1.00000"/>
+            </geometry>
+        </visual>
+    </link>
+    <link name="${prefix}claw1_link">
+        <collision name="${prefix}Claw1_collision">
+            <origin rpy="0.00000 0.00000 0.00000" xyz="0.00000 0.00000 -0.05464"/>
+            <geometry>
+                <mesh filename="package://rover_description/meshes/dae/Cube.125.dae" scale="1.00000 1.00000 1.00000"/>
+            </geometry>
+        </collision>
+        <inertial>
+            <inertia ixx="0.00433" ixy="0.00000" ixz="0.00000" iyy="0.00683" iyz="0.00000" izz="0.00283"/>
+            <origin rpy="0.00000 0.00000 0.00000" xyz="0.00000 0.00000 -0.05464"/>
+            <mass value="0.20000"/>
+        </inertial>
+        <visual name="${prefix}Claw1">
+            <material name="Material.001"/>
+            <origin rpy="0.00000 0.00000 0.00000" xyz="0.00000 0.00000 -0.05464"/>
+            <geometry>
+                <box size="0.40000 0.10000 0.50000"/>
+            </geometry>
+        </visual>
+    </link>
+    <link name="${prefix}claw2_link">
+        <collision name="${prefix}Claw2_collision">
+            <origin rpy="0.00000 0.00000 0.00000" xyz="0.00000 0.00000 -0.05464"/>
+            <geometry>
+                <mesh filename="package://rover_description/meshes/dae/Cube.124.dae" scale="1.00000 1.00000 1.00000"/>
+            </geometry>
+        </collision>
+        <inertial>
+            <inertia ixx="0.00433" ixy="0.00000" ixz="0.00000" iyy="0.00683" iyz="0.00000" izz="0.00283"/>
+            <origin rpy="0.00000 0.00000 0.00000" xyz="0.00000 0.00000 -0.05464"/>
+            <mass value="0.20000"/>
+        </inertial>
+        <visual name="${prefix}Claw2">
+            <material name="Material.001"/>
+            <origin rpy="0.00000 0.00000 0.00000" xyz="0.00000 0.00000 -0.05464"/>
+            <geometry>
+                <box size="0.40000 0.10000 0.50000"/>
+            </geometry>
+        </visual>
+    </link>
+
+  </xacro:macro>
+
+</robot>
