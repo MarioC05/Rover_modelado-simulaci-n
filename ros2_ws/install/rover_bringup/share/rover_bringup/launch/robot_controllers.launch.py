@@ -8,8 +8,9 @@ def generate_launch_description():
     'use_sim_time', default_value='true',
     description="use_sim_time simulation parameter"
   )
+  
   pkg_share_folder = get_package_share_directory('rover_description')
-  # Load joint state broadcaster controller
+
   joint_state_broadcaster = GroupAction(
     [
       generate_load_controller_launch_description(
@@ -18,7 +19,7 @@ def generate_launch_description():
           pkg_share_folder, 'config', 'robot_controllers.yaml'))
     ],
   )
-  # Load rover controller
+
   base_controller = GroupAction(
     [
       generate_load_controller_launch_description(
@@ -30,7 +31,7 @@ def generate_launch_description():
   )
 
   arm_pkg_share_folder = get_package_share_directory('rover_moveit_config')
-  # Load arm controller
+
   arm_controller = GroupAction(
     [
       generate_load_controller_launch_description(
@@ -40,7 +41,7 @@ def generate_launch_description():
       )
     ],
   )
-  # Load gripper controller
+
   gripper_controller = GroupAction(
     [
       generate_load_controller_launch_description(

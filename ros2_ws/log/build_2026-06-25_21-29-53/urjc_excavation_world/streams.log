@@ -1,0 +1,102 @@
+[0.007s] Invoking command in '/home/mario/Desktop/MyS/Rover_modelado-simulaci-n/ros2_ws/build/urjc_excavation_world': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake /home/mario/Desktop/MyS/Rover_modelado-simulaci-n/ros2_ws/src/urjc-excavation-world -DCMAKE_INSTALL_PREFIX=/home/mario/Desktop/MyS/Rover_modelado-simulaci-n/ros2_ws/install/urjc_excavation_world
+[0.066s] -- The C compiler identification is GNU 13.3.0
+[0.117s] -- The CXX compiler identification is GNU 13.3.0
+[0.138s] -- Detecting C compiler ABI info
+[0.282s] -- Detecting C compiler ABI info - done
+[0.288s] -- Check for working C compiler: /usr/bin/cc - skipped
+[0.288s] -- Detecting C compile features
+[0.289s] -- Detecting C compile features - done
+[0.297s] -- Detecting CXX compiler ABI info
+[0.433s] -- Detecting CXX compiler ABI info - done
+[0.442s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[0.442s] -- Detecting CXX compile features
+[0.443s] -- Detecting CXX compile features - done
+[0.446s] -- Found ros_gz_sim: 1.0.22 (/opt/ros/jazzy/share/ros_gz_sim/cmake)
+[0.568s] -- Found Python3: /usr/bin/python3 (found version "3.12.3") found components: Interpreter 
+[0.698s] -- Found rosidl_generator_c: 4.6.9 (/opt/ros/jazzy/share/rosidl_generator_c/cmake)
+[0.710s] -- Found rosidl_generator_cpp: 4.6.9 (/opt/ros/jazzy/share/rosidl_generator_cpp/cmake)
+[0.725s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[0.740s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[0.806s] -- Found rmw_implementation_cmake: 7.3.3 (/opt/ros/jazzy/share/rmw_implementation_cmake/cmake)
+[0.809s] -- Found rmw_fastrtps_cpp: 8.4.4 (/opt/ros/jazzy/share/rmw_fastrtps_cpp/cmake)
+[0.886s] -- Found OpenSSL: /usr/lib/x86_64-linux-gnu/libcrypto.so (found version "3.0.13")  
+[0.906s] -- Found FastRTPS: /opt/ros/jazzy/include (Required is at least version "2.13") 
+[0.935s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[1.149s] -- Found ament_cmake_ros: 0.12.1 (/opt/ros/jazzy/share/ament_cmake_ros/cmake)
+[1.226s] -- Configuring done (1.2s)
+[1.229s] -- Generating done (0.0s)
+[1.231s] -- Build files have been written to: /home/mario/Desktop/MyS/Rover_modelado-simulaci-n/ros2_ws/build/urjc_excavation_world
+[1.239s] Invoked command in '/home/mario/Desktop/MyS/Rover_modelado-simulaci-n/ros2_ws/build/urjc_excavation_world' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake /home/mario/Desktop/MyS/Rover_modelado-simulaci-n/ros2_ws/src/urjc-excavation-world -DCMAKE_INSTALL_PREFIX=/home/mario/Desktop/MyS/Rover_modelado-simulaci-n/ros2_ws/install/urjc_excavation_world
+[1.240s] Invoking command in '/home/mario/Desktop/MyS/Rover_modelado-simulaci-n/ros2_ws/build/urjc_excavation_world': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/mario/Desktop/MyS/Rover_modelado-simulaci-n/ros2_ws/build/urjc_excavation_world -- -j20 -l20
+[1.274s] Invoked command in '/home/mario/Desktop/MyS/Rover_modelado-simulaci-n/ros2_ws/build/urjc_excavation_world' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --build /home/mario/Desktop/MyS/Rover_modelado-simulaci-n/ros2_ws/build/urjc_excavation_world -- -j20 -l20
+[1.275s] Invoking command in '/home/mario/Desktop/MyS/Rover_modelado-simulaci-n/ros2_ws/build/urjc_excavation_world': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --install /home/mario/Desktop/MyS/Rover_modelado-simulaci-n/ros2_ws/build/urjc_excavation_world
+[1.283s] -- Install configuration: ""
+[1.283s] -- Installing: /home/mario/Desktop/MyS/Rover_modelado-simulaci-n/ros2_ws/install/urjc_excavation_world/share/urjc_excavation_world/launch
+[1.283s] -- Installing: /home/mario/Desktop/MyS/Rover_modelado-simulaci-n/ros2_ws/install/urjc_excavation_world/share/urjc_excavation_world/launch/urjc_excavation_msr.launch.py
+[1.284s] -- Installing: /home/mario/Desktop/MyS/Rover_modelado-simulaci-n/ros2_ws/install/urjc_excavation_world/share/urjc_excavation_world/launch/view_urjc_excavation.launch.py
+[1.284s] -- Installing: /home/mario/Desktop/MyS/Rover_modelado-simulaci-n/ros2_ws/install/urjc_excavation_world/share/urjc_excavation_world/launch/urjc_excavation.launch.py
+[1.284s] -- Installing: /home/mario/Desktop/MyS/Rover_modelado-simulaci-n/ros2_ws/install/urjc_excavation_world/share/urjc_excavation_world/maps
+[1.284s] -- Installing: /home/mario/Desktop/MyS/Rover_modelado-simulaci-n/ros2_ws/install/urjc_excavation_world/share/urjc_excavation_world/maps/excavation_urjc.pcd
+[1.286s] -- Installing: /home/mario/Desktop/MyS/Rover_modelado-simulaci-n/ros2_ws/install/urjc_excavation_world/share/urjc_excavation_world/maps/excavation_urjc.navmap
+[1.286s] -- Installing: /home/mario/Desktop/MyS/Rover_modelado-simulaci-n/ros2_ws/install/urjc_excavation_world/share/urjc_excavation_world/models
+[1.287s] -- Installing: /home/mario/Desktop/MyS/Rover_modelado-simulaci-n/ros2_ws/install/urjc_excavation_world/share/urjc_excavation_world/models/blue_cube
+[1.287s] -- Installing: /home/mario/Desktop/MyS/Rover_modelado-simulaci-n/ros2_ws/install/urjc_excavation_world/share/urjc_excavation_world/models/blue_cube/meshes
+[1.287s] -- Installing: /home/mario/Desktop/MyS/Rover_modelado-simulaci-n/ros2_ws/install/urjc_excavation_world/share/urjc_excavation_world/models/blue_cube/meshes/blue_cube.dae
+[1.287s] -- Installing: /home/mario/Desktop/MyS/Rover_modelado-simulaci-n/ros2_ws/install/urjc_excavation_world/share/urjc_excavation_world/models/blue_cube/model.config
+[1.287s] -- Installing: /home/mario/Desktop/MyS/Rover_modelado-simulaci-n/ros2_ws/install/urjc_excavation_world/share/urjc_excavation_world/models/blue_cube/model.sdf
+[1.287s] -- Installing: /home/mario/Desktop/MyS/Rover_modelado-simulaci-n/ros2_ws/install/urjc_excavation_world/share/urjc_excavation_world/models/red_cube
+[1.287s] -- Installing: /home/mario/Desktop/MyS/Rover_modelado-simulaci-n/ros2_ws/install/urjc_excavation_world/share/urjc_excavation_world/models/red_cube/meshes
+[1.287s] -- Installing: /home/mario/Desktop/MyS/Rover_modelado-simulaci-n/ros2_ws/install/urjc_excavation_world/share/urjc_excavation_world/models/red_cube/meshes/red_cube.dae
+[1.287s] -- Installing: /home/mario/Desktop/MyS/Rover_modelado-simulaci-n/ros2_ws/install/urjc_excavation_world/share/urjc_excavation_world/models/red_cube/model.config
+[1.288s] -- Installing: /home/mario/Desktop/MyS/Rover_modelado-simulaci-n/ros2_ws/install/urjc_excavation_world/share/urjc_excavation_world/models/red_cube/model.sdf
+[1.288s] -- Installing: /home/mario/Desktop/MyS/Rover_modelado-simulaci-n/ros2_ws/install/urjc_excavation_world/share/urjc_excavation_world/models/green_cube
+[1.288s] -- Installing: /home/mario/Desktop/MyS/Rover_modelado-simulaci-n/ros2_ws/install/urjc_excavation_world/share/urjc_excavation_world/models/green_cube/meshes
+[1.288s] -- Installing: /home/mario/Desktop/MyS/Rover_modelado-simulaci-n/ros2_ws/install/urjc_excavation_world/share/urjc_excavation_world/models/green_cube/meshes/green_cube.dae
+[1.288s] -- Installing: /home/mario/Desktop/MyS/Rover_modelado-simulaci-n/ros2_ws/install/urjc_excavation_world/share/urjc_excavation_world/models/green_cube/model.config
+[1.288s] -- Installing: /home/mario/Desktop/MyS/Rover_modelado-simulaci-n/ros2_ws/install/urjc_excavation_world/share/urjc_excavation_world/models/green_cube/model.sdf
+[1.288s] -- Installing: /home/mario/Desktop/MyS/Rover_modelado-simulaci-n/ros2_ws/install/urjc_excavation_world/share/urjc_excavation_world/models/urjc_excavation
+[1.288s] -- Installing: /home/mario/Desktop/MyS/Rover_modelado-simulaci-n/ros2_ws/install/urjc_excavation_world/share/urjc_excavation_world/models/urjc_excavation/meshes
+[1.288s] -- Installing: /home/mario/Desktop/MyS/Rover_modelado-simulaci-n/ros2_ws/install/urjc_excavation_world/share/urjc_excavation_world/models/urjc_excavation/meshes/Image_0.095.jpg
+[1.288s] -- Installing: /home/mario/Desktop/MyS/Rover_modelado-simulaci-n/ros2_ws/install/urjc_excavation_world/share/urjc_excavation_world/models/urjc_excavation/meshes/Image_0.090.jpg
+[1.288s] -- Installing: /home/mario/Desktop/MyS/Rover_modelado-simulaci-n/ros2_ws/install/urjc_excavation_world/share/urjc_excavation_world/models/urjc_excavation/meshes/Image_0.099.jpg
+[1.289s] -- Installing: /home/mario/Desktop/MyS/Rover_modelado-simulaci-n/ros2_ws/install/urjc_excavation_world/share/urjc_excavation_world/models/urjc_excavation/meshes/Image_0.077.jpg
+[1.289s] -- Installing: /home/mario/Desktop/MyS/Rover_modelado-simulaci-n/ros2_ws/install/urjc_excavation_world/share/urjc_excavation_world/models/urjc_excavation/meshes/Image_0.091.jpg
+[1.289s] -- Installing: /home/mario/Desktop/MyS/Rover_modelado-simulaci-n/ros2_ws/install/urjc_excavation_world/share/urjc_excavation_world/models/urjc_excavation/meshes/Image_0.093.jpg
+[1.289s] -- Installing: /home/mario/Desktop/MyS/Rover_modelado-simulaci-n/ros2_ws/install/urjc_excavation_world/share/urjc_excavation_world/models/urjc_excavation/meshes/URJC_excavation.dae
+[1.290s] -- Installing: /home/mario/Desktop/MyS/Rover_modelado-simulaci-n/ros2_ws/install/urjc_excavation_world/share/urjc_excavation_world/models/urjc_excavation/meshes/Image_1.016.jpg
+[1.290s] -- Installing: /home/mario/Desktop/MyS/Rover_modelado-simulaci-n/ros2_ws/install/urjc_excavation_world/share/urjc_excavation_world/models/urjc_excavation/meshes/Image_0.092.jpg
+[1.290s] -- Installing: /home/mario/Desktop/MyS/Rover_modelado-simulaci-n/ros2_ws/install/urjc_excavation_world/share/urjc_excavation_world/models/urjc_excavation/meshes/Image_0.079.jpg
+[1.290s] -- Installing: /home/mario/Desktop/MyS/Rover_modelado-simulaci-n/ros2_ws/install/urjc_excavation_world/share/urjc_excavation_world/models/urjc_excavation/meshes/Image_0.098.jpg
+[1.290s] -- Installing: /home/mario/Desktop/MyS/Rover_modelado-simulaci-n/ros2_ws/install/urjc_excavation_world/share/urjc_excavation_world/models/urjc_excavation/meshes/Image_0.094.jpg
+[1.290s] -- Installing: /home/mario/Desktop/MyS/Rover_modelado-simulaci-n/ros2_ws/install/urjc_excavation_world/share/urjc_excavation_world/models/urjc_excavation/meshes/Image_1.014.jpg
+[1.290s] -- Installing: /home/mario/Desktop/MyS/Rover_modelado-simulaci-n/ros2_ws/install/urjc_excavation_world/share/urjc_excavation_world/models/urjc_excavation/meshes/Image_0.089.jpg
+[1.290s] -- Installing: /home/mario/Desktop/MyS/Rover_modelado-simulaci-n/ros2_ws/install/urjc_excavation_world/share/urjc_excavation_world/models/urjc_excavation/meshes/Image_0.087.jpg
+[1.291s] -- Installing: /home/mario/Desktop/MyS/Rover_modelado-simulaci-n/ros2_ws/install/urjc_excavation_world/share/urjc_excavation_world/models/urjc_excavation/meshes/URJC_excavation.stl
+[1.291s] -- Installing: /home/mario/Desktop/MyS/Rover_modelado-simulaci-n/ros2_ws/install/urjc_excavation_world/share/urjc_excavation_world/models/urjc_excavation/meshes/Image_0.088.jpg
+[1.291s] -- Installing: /home/mario/Desktop/MyS/Rover_modelado-simulaci-n/ros2_ws/install/urjc_excavation_world/share/urjc_excavation_world/models/urjc_excavation/meshes/Image_0.086.jpg
+[1.291s] -- Installing: /home/mario/Desktop/MyS/Rover_modelado-simulaci-n/ros2_ws/install/urjc_excavation_world/share/urjc_excavation_world/models/urjc_excavation/meshes/Image_1.017.jpg
+[1.291s] -- Installing: /home/mario/Desktop/MyS/Rover_modelado-simulaci-n/ros2_ws/install/urjc_excavation_world/share/urjc_excavation_world/models/urjc_excavation/meshes/Image_0.083.jpg
+[1.291s] -- Installing: /home/mario/Desktop/MyS/Rover_modelado-simulaci-n/ros2_ws/install/urjc_excavation_world/share/urjc_excavation_world/models/urjc_excavation/model.config
+[1.291s] -- Installing: /home/mario/Desktop/MyS/Rover_modelado-simulaci-n/ros2_ws/install/urjc_excavation_world/share/urjc_excavation_world/models/urjc_excavation/model.sdf
+[1.291s] -- Installing: /home/mario/Desktop/MyS/Rover_modelado-simulaci-n/ros2_ws/install/urjc_excavation_world/share/urjc_excavation_world/worlds
+[1.292s] -- Installing: /home/mario/Desktop/MyS/Rover_modelado-simulaci-n/ros2_ws/install/urjc_excavation_world/share/urjc_excavation_world/worlds/urjc_excavation_msr.world
+[1.292s] -- Installing: /home/mario/Desktop/MyS/Rover_modelado-simulaci-n/ros2_ws/install/urjc_excavation_world/share/urjc_excavation_world/worlds/urjc_excavation.world
+[1.292s] -- Installing: /home/mario/Desktop/MyS/Rover_modelado-simulaci-n/ros2_ws/install/urjc_excavation_world/share/urjc_excavation_world/worlds/urjc_excavation.sdf
+[1.292s] -- Installing: /home/mario/Desktop/MyS/Rover_modelado-simulaci-n/ros2_ws/install/urjc_excavation_world/share/urjc_excavation_world/environment/urjc_excavation_world.dsv
+[1.292s] -- Installing: /home/mario/Desktop/MyS/Rover_modelado-simulaci-n/ros2_ws/install/urjc_excavation_world/share/ament_index/resource_index/package_run_dependencies/urjc_excavation_world
+[1.292s] -- Installing: /home/mario/Desktop/MyS/Rover_modelado-simulaci-n/ros2_ws/install/urjc_excavation_world/share/ament_index/resource_index/parent_prefix_path/urjc_excavation_world
+[1.292s] -- Installing: /home/mario/Desktop/MyS/Rover_modelado-simulaci-n/ros2_ws/install/urjc_excavation_world/share/urjc_excavation_world/environment/ament_prefix_path.sh
+[1.292s] -- Installing: /home/mario/Desktop/MyS/Rover_modelado-simulaci-n/ros2_ws/install/urjc_excavation_world/share/urjc_excavation_world/environment/ament_prefix_path.dsv
+[1.292s] -- Installing: /home/mario/Desktop/MyS/Rover_modelado-simulaci-n/ros2_ws/install/urjc_excavation_world/share/urjc_excavation_world/environment/path.sh
+[1.292s] -- Installing: /home/mario/Desktop/MyS/Rover_modelado-simulaci-n/ros2_ws/install/urjc_excavation_world/share/urjc_excavation_world/environment/path.dsv
+[1.293s] -- Installing: /home/mario/Desktop/MyS/Rover_modelado-simulaci-n/ros2_ws/install/urjc_excavation_world/share/urjc_excavation_world/local_setup.bash
+[1.293s] -- Installing: /home/mario/Desktop/MyS/Rover_modelado-simulaci-n/ros2_ws/install/urjc_excavation_world/share/urjc_excavation_world/local_setup.sh
+[1.293s] -- Installing: /home/mario/Desktop/MyS/Rover_modelado-simulaci-n/ros2_ws/install/urjc_excavation_world/share/urjc_excavation_world/local_setup.zsh
+[1.293s] -- Installing: /home/mario/Desktop/MyS/Rover_modelado-simulaci-n/ros2_ws/install/urjc_excavation_world/share/urjc_excavation_world/local_setup.dsv
+[1.293s] -- Installing: /home/mario/Desktop/MyS/Rover_modelado-simulaci-n/ros2_ws/install/urjc_excavation_world/share/urjc_excavation_world/package.dsv
+[1.293s] -- Installing: /home/mario/Desktop/MyS/Rover_modelado-simulaci-n/ros2_ws/install/urjc_excavation_world/share/ament_index/resource_index/packages/urjc_excavation_world
+[1.293s] -- Installing: /home/mario/Desktop/MyS/Rover_modelado-simulaci-n/ros2_ws/install/urjc_excavation_world/share/urjc_excavation_world/cmake/ament_cmake_export_dependencies-extras.cmake
+[1.293s] -- Installing: /home/mario/Desktop/MyS/Rover_modelado-simulaci-n/ros2_ws/install/urjc_excavation_world/share/urjc_excavation_world/cmake/urjc_excavation_worldConfig.cmake
+[1.293s] -- Installing: /home/mario/Desktop/MyS/Rover_modelado-simulaci-n/ros2_ws/install/urjc_excavation_world/share/urjc_excavation_world/cmake/urjc_excavation_worldConfig-version.cmake
+[1.293s] -- Installing: /home/mario/Desktop/MyS/Rover_modelado-simulaci-n/ros2_ws/install/urjc_excavation_world/share/urjc_excavation_world/package.xml
+[1.294s] Invoked command in '/home/mario/Desktop/MyS/Rover_modelado-simulaci-n/ros2_ws/build/urjc_excavation_world' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/jazzy DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake --install /home/mario/Desktop/MyS/Rover_modelado-simulaci-n/ros2_ws/build/urjc_excavation_world

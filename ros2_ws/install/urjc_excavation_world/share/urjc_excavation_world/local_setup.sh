@@ -2,7 +2,7 @@
 
 # since this file is sourced use either the provided AMENT_CURRENT_PREFIX
 # or fall back to the destination set at configure time
-: ${AMENT_CURRENT_PREFIX:="/home/mario/Desktop/MyS/Mario_Casero_Practica3/yet_another_ws/install/urjc_excavation_world"}
+: ${AMENT_CURRENT_PREFIX:="/home/mario/Desktop/MyS/Rover_modelado-simulaci-n/ros2_ws/install/urjc_excavation_world"}
 if [ ! -d "$AMENT_CURRENT_PREFIX" ]; then
   if [ -z "$COLCON_CURRENT_PREFIX" ]; then
     echo "The compile time prefix path '$AMENT_CURRENT_PREFIX' doesn't " \

@@ -1,1 +1,0 @@
-Invoking command in '/home/mario/Desktop/MyS/Mario_Casero_Practica3/yet_another_ws/build/rover_description': DEBUGINFOD_URLS=https://debuginfod.ubuntu.com /usr/bin/cmake /home/mario/Desktop/MyS/Mario_Casero_Practica3/yet_another_ws/src/rover_description -DCMAKE_INSTALL_PREFIX=/home/mario/Desktop/MyS/Mario_Casero_Practica3/yet_another_ws/install/rover_description

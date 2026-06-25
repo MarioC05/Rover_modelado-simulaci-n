@@ -92,6 +92,7 @@ def generate_launch_description():
   rviz_config_file = PathJoinSubstitution(
     [FindPackageShare("rover_description"), "rviz", "robot_moveit.rviz"]
   )
+  
   rviz_node = Node(
     package="rviz2",
     executable="rviz2",
@@ -99,6 +100,7 @@ def generate_launch_description():
     output="log",
     arguments=["-d", rviz_config_file],
   )
+
   # Bridge
   bridge = Node(
     package='ros_gz_bridge',
@@ -114,6 +116,7 @@ def generate_launch_description():
     ],
     output='screen',
   )
+
   # Image bridge
   gz_image_bridge_node = Node(
     package="ros_gz_image",
@@ -128,6 +131,7 @@ def generate_launch_description():
       'camera.image.compressed.jpeg_quality': 75},
     ],
   )
+
   # Twist stamped
   twist_stamped = Node(
     package="twist_stamper",
@@ -141,6 +145,7 @@ def generate_launch_description():
     remappings={('cmd_vel_out', '/rover_base_control/cmd_vel'),
       ('cmd_vel_in', '/cmd_vel')},
   )
+
   ld = LaunchDescription()
   ld.add_action(SetEnvironmentVariable('GZ_SIM_RESOURCE_PATH',
   model_path))
