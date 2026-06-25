@@ -7,10 +7,10 @@ Este repositorio contiene archivos para controlar un rover en un entorno simulad
 El contenido de este repositorio se divide en 3 carpetas:
 
 1. images: contiene las diversas imagenes pedidas en la práctica.
-    -holding_green.png y red_blue.png son imagenes del entorno simulado.
-    -RVIZ_model.png y RVIZ_tf.png son imagenes de Rviz donde se muestran el modelo y las tf del robot (respectivamente) con los valores de las articulaciones en valores aleatorios.
-    -green+10m_graf.png es una imagen con las graficas pedidas mientra realiza la tarea de recogida del cubo verde y la de avanzar 10 metros, una detras de la otra.
-    -redblue_graf.png es otra imagen con gráficas pero esta vez mientras realiza la tarea de colocar el cubo rojo encima del azul.
+- **holding_green.png** y **red_blue.png**: entorno simulado.
+- **RVIZ_model.png** y **RVIZ_tf.png**: vistas en RViz del modelo y TF del robot con valores aleatorios en las articulaciones.
+- **green+10m_graf.png**: gráficas durante la tarea de recoger el cubo verde y avanzar 10 metros.
+- **redblue_graf.png**: gráficas durante la tarea de colocar el cubo rojo sobre el azul.
 
 2. ros2_ws: contiene el workspace de ros2 en el cual se ha realizado la práctica, más abajo se explica como utilizarlo.
 
